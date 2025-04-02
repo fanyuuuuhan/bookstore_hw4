@@ -2,7 +2,7 @@
 @source "./pages";
 @source "./components";
 @plugin "daisyui"{ 
-  themes: dim;
+  themes: dim, aqua;
 } 
 
 html,
