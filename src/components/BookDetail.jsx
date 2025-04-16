@@ -5,7 +5,7 @@ function BookDetail({ book }) {
     const [qty, setQty] = useState(book.stock > 0 ? 1 : 0);
 
     return (
-        <div className="flex text-white opacity-90 px-5">
+        <div className="flex opacity-90 px-5">
 
             <div className="w-1/5">
                 <img className="rounded-lg w-full" src={book.cover} alt={book.name} />
@@ -20,8 +20,8 @@ function BookDetail({ book }) {
 
                 <div className="flex justify-between px-10 py-4">
                     <div className="grid grid-row-2 text-left">
-                        <p className="text-2xl text-yellow-200">${book.price}</p>
-                        <p className="opacity-70 text-white">
+                        <p className="text-2xl text-yellow-500">${book.price}</p>
+                        <p className="opacity-70">
                             Stock : {book.stock}
                         </p>
                     </div>
@@ -40,7 +40,7 @@ function BookDetail({ book }) {
                                 ))}
                             </select>
                         </div>
-                        <p className="text-white opacity-70">Total Price: {book.price*qty} </p>
+                        <p className=" opacity-70">Total Price: {book.price*qty} </p>
                     </div>
 
                 </div>

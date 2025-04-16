@@ -3,9 +3,9 @@ import { Link } from "react-router"
 function Footer() {
     return (
         <footer>
-            <hr className="border-2 text-blue-200 mt-8 mb-3" />
+            <hr className="border-2 mt-8 mb-3" />
 
-            <div className="flex items-center px-8 py-6 text-white opacity-70">
+            <div className="flex items-center px-8 py-6 opacity-70">
                 <p className="w-3/5 text-left">
                     Copyright © 2025 - All made for Digital Technology Design hw4
                 </p>

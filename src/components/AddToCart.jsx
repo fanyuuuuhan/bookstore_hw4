@@ -26,7 +26,7 @@ function AddToCart({ book, qty }) {
     return (
         <>
             <button
-                className="bg-purple-400 btn md:w-50 lg:w-80 text-lg"
+                className="border-0 rounded-lg bg-purple-400 btn md:w-50 lg:w-80 text-lg"
                 onClick={addtoCart}
             >
                 Add To Cart

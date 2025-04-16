@@ -1,15 +1,38 @@
+
+
 @import "tailwindcss";
 @source "./pages";
 @source "./components";
 @plugin "daisyui"{ 
-  themes: dim, aqua;
+  themes: dim, Pale Aqua;
 } 
 
 html,
 body {
   line-height: 2;
-  background-color: #2a303c;
 }
+
+@plugin "daisyui/theme" {
+  name: "dim";
+  --color-primary: #2a303c;
+}
+
+@plugin "daisyui/theme" {
+  name: "Pale Aqua";
+  default: true;
+  --color-primary: #e0ffff;
+}
+
+[data-theme="Pale Aqua"] {
+    background-color: #e0ffff; 
+    color: #2a303c;
+}
+
+
+[data-theme="dim"] {
+    background-color: #2a303c; 
+}
+
 
 .main-layout {
   display: grid;
